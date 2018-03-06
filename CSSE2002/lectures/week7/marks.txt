@@ -1,0 +1,8 @@
+CSSE2002 assignment marks
+Albert 	 10 7 8
+Jane 	 2 10 8
+Jack 	 3 - -
+CSSE2002 assignment marks
+Albert 	 10 7 8
+Jane 	 2 10 8
+Jack 	 3 - -

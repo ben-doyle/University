@@ -1,0 +1,162 @@
+Hopefully you learnt a lot while completing the first assignment.
+If you did make any mistakes, then take the chance to learn from that.
+
+Here are some common mistakes that people made in assignment 1.
+
+Submission problems
+===================
+
+- Some people forgot to submit at all -- a draft submission in
+  Blackboard is not a submission at all!
+
+- Other people didn't submit the right version of their files. For
+  instance, a number of people uploaded the skeleton files given out
+  in the assignment handout instead of their completed versions of
+  those files.
+
+- Some others didn't submit the files in the way we asked for them:
+  for instance they compressed their submission instead of attaching
+  each of the files asked for individually as per the BB instructions.
+
+Those problems should be easy to avoid: read the submission
+instructions on Blackboard, and check your submission. To check your
+actual submission to Blackboard I recommend that you:
+
+- download the skeleton files I gave you again and set up a test
+  project "assignment-actualSubmission" with them
+
+- download from Blackboard the files that you actually submitted
+  and put them in the project "assignment-actualSubmission"
+
+- check that your files work as you expected them to.
+
+Testing problems
+================
+
+In our evaluation of your code using tests, we tested each of your
+classes in isolation using our own correct implementations of the
+other classes -- as per the assignment handout. 
+
+Some people changed the specifications of those other classes by
+adding public instance variables or methods to them and then using
+them in the class under test. If you did that, then your class under
+test wouldn't compile, and you passed none of the tests for that
+class. :(
+
+We tested each class in isolation, not just because we said that we
+would, but because your implementation of each class shouldn't be
+dependent on the implementation details of the others -- an important
+part of procedural abstraction!
+
+Be careful with that in Assignment 2! Only change the classes you are
+meant to in the way that we say you can!
+
+We've published a sample solution and the tests we used, so that you
+can test your code for yourself to see where you might have went
+wrong. (Just because you passed all the tests doesn't mean that your
+implementation is perfect though!)
+
+
+Code Quality
+============
+
+Here are some common mistakes that people made:
+
+i. Java naming conventions and comments [poor=0, fair=0.5, good=1]:
+[Uses java naming conventions and sensible names for variables;
+ Appropriate comments for methods, fields and local variables (except
+ for-loop variables), tricky code, exceptions.]
+
+For java naming convenctions, see: http://docs.oracle.com/javase/tutorial/java/nutsandbolts/variables.html:
+
+- When choosing a name for your variables, use full words instead of cryptic abbreviations. 
+
+- If the name you choose consists of only one word, spell that word in
+  all lowercase letters. If it consists of more than one word,
+  capitalize the first letter of each subsequent word. The names
+  gearRatio and currentGear are prime examples of this convention. If
+  your variable stores a constant value, such as static final int
+  NUM_GEARS = 6, the convention changes slightly, capitalizing every
+  letter and separating subsequent words with the underscore
+  character. By convention, the underscore character is never used
+  elsewhere.
+
+- The same naming rules and conventions also apply to method names and
+  class names except that the first letter of a class name should be
+  capitalized and the first word in a method name should be a verb.
+
+With respect to commenting:
+
+- Do comment methods, fields, local variables and tricky code, but
+  don't over-comment either. Especially by repeating verbatim what
+  your code does -- try to summarise.
+
+- Comments that don't match the code or aren't correct w.r.t. the code are useless!
+
+ii. Formatting (incl. white space and indentation) [poor=0, fair=0.5, good=1]: 
+[Consistent and readable (including line length not over 80 chars).]
+
+- Hint: consider using the automatic code formatter in Eclipse! (Check
+  its settings and output of course.)
+
+iii. Information hiding and invariant protection [poor=0, fair=0.5,good=1]:
+[Instance variables and any new methods are private, and cannot be
+interfered with from outside class]
+
+- Some people had public instance variables. Worse still, some people
+  used these in the implementations of their other classes, breaking
+  the rules of data abstraction by making them dependent on the
+  implementation details of the others.
+  
+iv. Meaningful code invariants [poor=0, fair=0.5, good=1]:
+[Meaningful code invariants commented and implemented.]
+
+- Some people didn't comment their invariants at the top of the file,
+  and others didn't implement them (or implement them properly).
+
+- Some people only had trivial invariants, e.g. null-checking only for
+  the Track class.
+
+v. Hash Codes [issues=0, good=0.5]:
+[Given that hash codes are implemented correctly, do they distribute
+objects reasonably? Zero marks otherwise.]
+
+- We only gave out the 0.5 marks for hash codes if your hash codes
+  worked, and they reasonably distributed hash-code values. For
+  example, if your hash code methods were correct, but all locations
+  on the one section (not at junctions) hashed to the same integer
+  value, then this would clump together all those locations in the one
+  spot in a hash-table.
+
+- This was a challenging half mark to get -- so no need to be hard on
+  yourself if you didn't get it.
+
+vi. Clarity and complexity [issues=0, good=0.5]: 
+[Code is not overly complex or hard to understand]
+
+- most people got this half mark
+
+
+JUnit Testing for CSSE7023 students
+===================================
+
+Here are some mistakes that I saw:
+
+- Neglecting to test exceptional behaviors or boundary input values as
+  well as typical inputs -- see the lectures on testing. It is
+  important to be systematic and thorough with your tests!
+
+- Not concisely commenting your tests to say what they are testing for.
+
+- Not being as careful with the formatting and code quality as you
+  would be in the code itself.
+
+
+Suspected Student Misconduct
+===================================
+
+- If we think that you may have had excessive collabortation with
+  other students in A1 we may be investigating it now! Please
+  rememember that these are individual assignments and that we use
+  sophisticated tools to check for code similarity and potential
+  collusion.

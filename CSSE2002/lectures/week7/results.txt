@@ -1,0 +1,8 @@
+CSSE2002 assignment marks
+Albert 	 10 7 8		Total mark: 25
+Jane 	 2 10 8		Total mark: 20
+Jack 	 3 - -		Total mark: 3
+CSSE2002 assignment marks		Total mark: 0
+Albert 	 10 7 8		Total mark: 25
+Jane 	 2 10 8		Total mark: 20
+Jack 	 3 - -		Total mark: 3
